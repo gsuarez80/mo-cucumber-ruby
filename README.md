@@ -56,25 +56,11 @@ xhttps://github.com/cucumber-ltd/shouty.rb
  
      mkdir results
      mkdir logs
-     mkdir results/renault
-     mkdir results/nissan
-     mkdir results/dacia
-     mkdir results/datsun
-     mkdir results/infiniti
-     mkdir results/tomcat_services
+     mkdir results/XXXX
      mkdir config/apikeys
      mkdir results/junit
-     mkdir results/junit/renault
-     mkdir results/junit/nissan
-     mkdir results/junit/dacia
-     mkdir results/junit/datsun
-     mkdir results/junit/infiniti
      mkdir results/failed
-     mkdir results/failed/renault
-     mkdir results/failed/nissan
-     mkdir results/failed/dacia
-     mkdir results/failed/datsun
-     mkdir results/failed/infiniti
+     mkdir results/failed/xxxxx
      mkdir results/json
  
  Then install all the Ruby dependencies for the project:
@@ -98,15 +84,15 @@ xhttps://github.com/cucumber-ltd/shouty.rb
  
  e.g running tests for against UAT for Nissan would be
  
-     rake api_tests:execute_regression[uat,nissan]
+     rake api_tests:execute_regression[uat,xxxx]
  
   ***Note:  Some cmd line shells require you to escape the brackets e.g
  
-     rake api_tests:execute_regression\[uat,nissan\]
+     rake api_tests:execute_regression\[uat,xxxxx\]
      
  For running smoke tests
      
-     rake api_tests:execute_regression[uat,nissan,smoke]
+     rake api_tests:execute_regression[uat,xxxxx,smoke]
  
  
  You can run tests for a particular market by calling cucumber directly and passing in:
@@ -121,7 +107,7 @@ xhttps://github.com/cucumber-ltd/shouty.rb
  
  Below is an example that runs offers V2 tests on UAT for Renault Great Britain
  
-     bundle exec cucumber --r features features/feature_files/ --tags @v2_offers environment=uat brand=renault country_name=Great-Britain country_code=GB language=en offers=v2
+     bundle exec cucumber --r features features/feature_files/ --tags @xxxxxx environment=uat brand=xxx country_name=Great-Britain country_code=GB language=en offers=v2
  
  ####Test Results
  The results can be found under results/{brand}. Each result file will have the environment, brand, country and timestamp in the filename
@@ -161,4 +147,4 @@ xhttps://github.com/cucumber-ltd/shouty.rb
  
  ## License
  
- Helios API Acceptance Test is released under the DigitasLBI Licence.
+ Movember Foundation API Acceptance Test is released under Mo Licence.
